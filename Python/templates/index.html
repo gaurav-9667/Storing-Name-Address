@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Address</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="/static/script.js" defer></script>
+</head>
+<body>
+
+<div class="container">
+    <h2>Store Name & Address</h2>
+
+    <form method="POST" onsubmit="return validateForm()">
+        <input type="text" name="name" id="name" placeholder="Enter Name">
+        <input type="text" name="address" id="address" placeholder="Enter Address">
+        <button type="submit">Save</button>
+    </form>
+
+    <p class="message">{{ message }}</p>
+
+    <a href="/search">Search Address →</a>
+</div>
+
+</body>
+</html>

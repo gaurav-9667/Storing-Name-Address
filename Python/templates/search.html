@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Address</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="/static/script.js" defer></script>
+</head>
+<body>
+
+<div class="container">
+    <h2>Search by Name</h2>
+
+    <form method="POST" onsubmit="return validateSearch()">
+        <input type="text" name="name" id="searchName" placeholder="Enter Name">
+        <button type="submit">Search</button>
+    </form>
+
+    <p class="result">{{ result }}</p>
+
+    <a href="/">← Go Back</a>
+</div>
+
+</body>
+</html>
